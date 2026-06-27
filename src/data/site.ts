@@ -63,13 +63,13 @@ export const experiences = [
     period: "2025",
   },
   {
-    role: "Member",
-    organization: "Aliansi Siber Gadjah Mada",
+    role: "Member of Aliansi Siber Gadjah Mada",
+    organization: "Komunitas Mahasiswa TIK UGM",
     period: "2026 – Sekarang",
   },
   {
     role: "Staff of Kajian Strategis dan Advokasi",
-    organization: "Forum Komunikasi Mahasiswa TIK UGM",
+    organization: "Forum Komunikasi Teknologi Rekayasa Internet UGM",
     period: "2026 – Sekarang",
   },
 ];
