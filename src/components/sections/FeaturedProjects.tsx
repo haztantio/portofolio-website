@@ -12,7 +12,7 @@ export default async function FeaturedProjects() {
       <div className="mx-auto max-w-4xl">
         <SectionReveal className="flex items-end justify-between">
           <div>
-            <p className="section-eyebrow mb-3">// Featured Work</p>
+            <p className="section-eyebrow mb-3">{"// Featured Work"}</p>
             <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
               Featured Projects
             </h2>

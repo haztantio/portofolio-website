@@ -6,7 +6,7 @@ export default function AboutMe() {
     <section id="about" className="px-6 py-24">
       <div className="mx-auto max-w-4xl">
         <SectionReveal>
-          <p className="section-eyebrow mb-3">// About Me</p>
+          <p className="section-eyebrow mb-3">{"// About Me"}</p>
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
             Who I&apos;m becoming
           </h2>

@@ -7,7 +7,7 @@ export default function Experience() {
     <section className="px-6 py-24">
       <div className="mx-auto max-w-3xl">
         <SectionReveal>
-          <p className="section-eyebrow mb-3">// Organizational Experience</p>
+          <p className="section-eyebrow mb-3">{"// Organizational Experience"}</p>
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">Experience</h2>
         </SectionReveal>
 

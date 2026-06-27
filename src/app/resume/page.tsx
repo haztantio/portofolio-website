@@ -15,7 +15,7 @@ export default function ResumePage() {
       <div className="mx-auto max-w-3xl">
         <SectionReveal className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="section-eyebrow mb-3">// Resume</p>
+            <p className="section-eyebrow mb-3">{"// Resume"}</p>
             <h1 className="font-display text-4xl font-bold text-ink sm:text-5xl">
               {profile.name}
             </h1>

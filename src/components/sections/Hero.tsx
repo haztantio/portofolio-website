@@ -19,7 +19,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <p className="section-eyebrow mb-4">// Personal Portfolio</p>
+          <p className="section-eyebrow mb-4">{"// Personal Portfolio"}</p>
 
           <h1 className="font-display text-4xl font-bold leading-tight text-ink sm:text-5xl">
             Halo, saya{" "}

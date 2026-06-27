@@ -6,7 +6,7 @@ export default function SkillsDashboard() {
     <section className="px-6 py-24">
       <div className="mx-auto max-w-5xl">
         <SectionReveal>
-          <p className="section-eyebrow mb-3">// Toolbox</p>
+          <p className="section-eyebrow mb-3">{"// Toolbox"}</p>
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">Skills</h2>
         </SectionReveal>
 

@@ -8,7 +8,7 @@ export default function WhatImLearning() {
     <section className="px-6 py-24">
       <div className="mx-auto max-w-4xl">
         <SectionReveal>
-          <p className="section-eyebrow mb-3">// In Progress</p>
+          <p className="section-eyebrow mb-3">{"// In Progress"}</p>
           <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl">
             What I&apos;m Learning
           </h2>

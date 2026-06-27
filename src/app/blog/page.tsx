@@ -17,7 +17,7 @@ export default function BlogPage() {
     <section className="px-6 py-28">
       <div className="mx-auto max-w-5xl">
         <SectionReveal>
-          <p className="section-eyebrow mb-3">// Writeups & Notes</p>
+          <p className="section-eyebrow mb-3">{"// Writeups & Notes"}</p>
           <h1 className="font-display text-4xl font-bold text-ink sm:text-5xl">Blog</h1>
           <p className="mt-4 max-w-xl text-sm text-ink-muted">
             Notes from CTFs, Linux, and networking — written so future-me (and maybe
