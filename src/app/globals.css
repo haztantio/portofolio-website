@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    /* Dark mode (default) — the brief's primary, intentional design */
+    --color-bg: #0a0e14;
+    --color-bg-surface: #111827;
+    --color-bg-elevated: #161d2b;
+    --color-ink: #e5e7eb;
+    --color-ink-muted: #94a3b8;
+    --color-ink-faint: #5b6679;
+    --color-border: rgba(255, 255, 255, 0.08);
+    --color-border-strong: rgba(255, 255, 255, 0.14);
+    --color-glass-bg: rgba(17, 24, 39, 0.55);
+    --color-glass-bg-strong: rgba(17, 24, 39, 0.75);
+    --color-glass-border: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Light mode — same brand cyan/green, inverted surfaces */
+  html.light {
+    --color-bg: #f3f6fb;
+    --color-bg-surface: #ffffff;
+    --color-bg-elevated: #eaeff6;
+    --color-ink: #0f172a;
+    --color-ink-muted: #475569;
+    --color-ink-faint: #94a3b8;
+    --color-border: rgba(15, 23, 42, 0.1);
+    --color-border-strong: rgba(15, 23, 42, 0.16);
+    --color-glass-bg: rgba(255, 255, 255, 0.65);
+    --color-glass-bg-strong: rgba(255, 255, 255, 0.85);
+    --color-glass-border: rgba(15, 23, 42, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Respect reduced-motion preferences everywhere, per brief: "no excessive animation" */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  ::selection {
+    background-color: rgba(0, 217, 255, 0.25);
+    color: #ffffff;
+  }
+
+  /* Visible keyboard focus ring everywhere */
+  :focus-visible {
+    outline: 2px solid #00d9ff;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .glass {
+    background: var(--color-glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--color-glass-border);
+  }
+
+  .glass-strong {
+    background: var(--color-glass-bg-strong);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-glass-border);
+  }
+
+  .grid-overlay {
+    background-image: linear-gradient(rgba(0, 217, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+
+  .section-eyebrow {
+    font-family: var(--font-mono);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #00d9ff;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #00d9ff, #34d399);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Markdown article styling (used by blog post pages via @tailwindcss/typography) */
+.prose-cyber {
+  --tw-prose-body: #cbd5e1;
+  --tw-prose-headings: #f1f5f9;
+  --tw-prose-links: #00d9ff;
+  --tw-prose-bold: #f1f5f9;
+  --tw-prose-counters: #00d9ff;
+  --tw-prose-bullets: #334155;
+  --tw-prose-hr: rgba(255, 255, 255, 0.1);
+  --tw-prose-quotes: #e2e8f0;
+  --tw-prose-quote-borders: #00d9ff;
+  --tw-prose-code: #34d399;
+  --tw-prose-pre-code: #e2e8f0;
+  --tw-prose-pre-bg: #0d1117;
+  --tw-prose-th-borders: rgba(255, 255, 255, 0.15);
+  --tw-prose-td-borders: rgba(255, 255, 255, 0.08);
+}
+
+.prose-cyber pre {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+}
+
+.prose-cyber code {
+  font-family: var(--font-mono);
+}
+
+.prose-cyber a.heading-anchor {
+  text-decoration: none;
+}

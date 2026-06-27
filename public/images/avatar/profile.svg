@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0A0E14"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00D9FF" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="600" fill="url(#g)"/>
+  <rect width="600" height="600" fill="url(#grid)"/>
+  <rect x="1" y="1" width="598" height="598" fill="none" stroke="#00D9FF" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="50%" y="46%" font-size="48" text-anchor="middle" dominant-baseline="middle">🧑‍💻</text>
+  <text x="50%" y="68%" font-family="monospace" font-size="15" fill="#00D9FF" text-anchor="middle" letter-spacing="1">HASTANTIO R. ADAM</text>
+</svg>
