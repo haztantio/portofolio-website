@@ -90,7 +90,7 @@ export const achievements = [
 ];
 
 export const socialLinks = {
-  github: "https://github.com/hastantioridhwandiadam2007-web",
+  github: "https://github.com/haztantio",
   linkedin: "https://www.linkedin.com/in/haztantio",
   instagram: "https://instagram.com/haztantio",
   email: "mailto:adamridhwandi@gmail.com",
